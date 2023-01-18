@@ -1,0 +1,46 @@
+body{
+    background-image: url("images/bg-register.jpg");
+    background-size: 100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-contrast{
+    text-align: center;
+    width: 60vw;
+    height: 50vh;
+    background-color: beige ;
+    opacity: 0.7;
+}
+
+#register-form{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form .label{
+    text-align: right;
+}
+
+form .input{
+    justify-self: start;
+}
+
+form .submit{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    width: 75%;
+    justify-self: center;
+}
+
+
+

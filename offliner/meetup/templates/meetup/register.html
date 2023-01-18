@@ -1,0 +1,39 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'meetup/style.css'%}">
+
+<body>
+    <div class="bg-contrast">
+            <h1>Join Offliner</h1>
+            <h2>Hang out with people near you in person</h2>  
+            <form id="register-form" method="POST" action="">
+                {% csrf_token %}
+        
+                <span id="usename-label" class="item label">{{register_form.username.label}}</span>
+                <span id="username-input" class="item input input-username">{{register_form.username}}</span>
+    
+                <span id="email-label" class="item label">{{register_form.email.label}}</span>
+                <span id="email-input" class="item input input-email">{{register_form.email}}</span>
+        
+                <span id="pwd-label" class="item label">{{register_form.password1.label}}</span>
+                <span id="pwd-input" class="item input input-pwd">{{register_form.password1}}</span>
+    
+                <span id="pwd-repeat-label" class="item label">{{register_form.password2.label}}</span>
+                <span id="pwd-repeat-input" class="item input input-pwd-confirm">{{register_form.password2}}</span>
+        
+        
+                <input class='button submit' type="submit" value="register">
+            </form>
+            <p>Already have an account? You can <a href="#">Login directly</a>.</p>
+        
+
+
+
+
+    </div>
+
+
+
+</body>
+
+
