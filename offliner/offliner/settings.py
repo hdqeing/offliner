@@ -80,7 +80,7 @@ DATABASES = {
         'HOST': 'offlinerdb.mysql.database.azure.com',
         'NAME': 'offlinerdb',
         'USER': 'offlinerDB',
-        'PASSWORD': 'HDQeing110!',
+        'PASSWORD': '*',
     }
 }
 
